@@ -8,6 +8,7 @@ public class Test {
     public void setI(int i){
         this.i=i;
     }
+
     @Override
     protected Test clone(){
         Test test = new Test();
@@ -24,5 +25,7 @@ public class Test {
     @Override
     public int hashCode(){
         return i;
+
+
+        }
     }
-}

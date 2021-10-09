@@ -1,7 +1,7 @@
 package com.company;
 
 public class TestKeeper {
-    Test t;
+    static public Test t;
 
     public static void printText() {
         System.out.println("same txt");
@@ -13,5 +13,11 @@ public class TestKeeper {
     public void setT(Test t){
         t.setI(t.getI() + 1);
         this.t=t;
+    }
+    @Override
+    public  String toString() {
+        return "Test{" +
+                "t=" + t +
+                '}';
     }
 }
