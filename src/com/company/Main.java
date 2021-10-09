@@ -9,10 +9,10 @@ public class Main {
         System.out.println("Test value is:"+ t.getI());//5
 
     TestKeeper keeper = new TestKeeper();
-    keeper.setT(t);
+    keeper.setT(t.clone());
 
         System.out.println("test value in keeper is:"+ keeper.getT().getI());//6
-        System.out.println("test value in keeper is:"+ t.getI());//6
+        System.out.println("test value in keeper is:"+ t.getI());//5
 
     }
 }

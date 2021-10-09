@@ -10,4 +10,10 @@ public class Test {
 
         this.i=i;
     }
+    @Override
+    protected Test clone(){
+        Test test = new Test();
+        test.setI(this.i);
+        return test;
+    }
 }
