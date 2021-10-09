@@ -7,6 +7,7 @@ public class Test {
         return i;
     }
     public void setI(int i){
+
         this.i=i;
     }
 }

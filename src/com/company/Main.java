@@ -3,16 +3,16 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-    Test t1 = new Test();
-    t1.setI(2);
+    Test t = new Test();
+    t.setI(5);
 
-    Test t2=t1;
+        System.out.println("Test value is:"+ t.getI());//5
 
-    System.out.println(t2.getI());
+    TestKeeper keeper = new TestKeeper();
+    keeper.setT(t);
 
-    t2.setI(5);
-
-    System.out.println(t1.getI());
+        System.out.println("test value in keeper is:"+ keeper.getT().getI());//6
+        System.out.println("test value in keeper is:"+ t.getI());//6
 
     }
 }
